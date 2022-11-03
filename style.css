@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Outfit:wght@100;200;300;400;500;700&display=swap');
+
+*{
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main{
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  width: 230px;
+  padding: 15px;
+}
+
+.top-section img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.bottom-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1{
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+}
+
+.description{
+  color: hsl(215, 51%, 70%);
+  font-size: 12px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.ethereum-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.first-section{
+  font-size: 12px;
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section img{
+  width: 7px;
+  margin-right: 5px;
+  display: block;
+}
+
+.second-section{
+  font-size: 12px;
+  font-weight: 200;
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-section img{
+  width: 12px;
+  margin-right: 5px;
+  display: block;
+}
+
+.creator-container{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid hsl(215, 29%, 35%);
+  padding-top: 10px;
+}
+
+.creator-container img{
+  width: 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+  display: block;
+  margin-right: 10px;
+}
+
+.creator-container p{
+  font-size: 12px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 200;
+}
+
+.creator-container span{
+  color: white;
+}
