@@ -22,9 +22,41 @@ main{
   padding: 15px;
 }
 
-.top-section img{
+.top-section{
+  position: relative;
+}
+
+.normal-image{
   width: 100%;
   border-radius: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+.overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: hsl(178, 56%, 66%);
+  border-radius: 10px;
+}
+
+.hover-image{
+  width: 25px;
+  display: block;
+}
+
+.top-section:hover .overlay{
+  opacity: 0.6;
 }
 
 .bottom-section{
@@ -38,6 +70,12 @@ h1{
   font-size: 14px;
   font-weight: 500;
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+h1:hover{
+  color: hsl(178, 100%, 50%);
 }
 
 .description{
@@ -106,4 +144,10 @@ h1{
 
 .creator-container span{
   color: white;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.creator-container span:hover{
+  color: hsl(178, 100%, 50%);
 }
